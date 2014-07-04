@@ -1,0 +1,42 @@
+Project:  Adagio
+Document: Game.txt
+Area:     Design
+
+Preamble
+--------
+This document conveys the main gameplay elements present in Adagio.
+
+
+Overview
+--------
+Primarily, Adagio is a game about killing other people with a lot of different
+weapons.  In addition to the straight-forward blowing-up of foes, the game can
+be augmented with different objectives, such as playing in a team to accrue as
+many points as possible by killing non-friendly players, using an explosive
+device to blow up another base (the defending team has a chance to disarm the
+device), capture an artefact from a team and return it to your base.  This
+document will not discuss game modes, but will concentrate on common core
+gameplay mechanics.
+
+
+Player Characters
+-----------------
+All players share the same base attributes and play the same.  Other than an
+alternate player model, base colour scheme, and handle, there is not much to
+distinguish one player from the next.  Each player has the following
+attributes:
+
+Health - Measured in units ranging from 0 (dead) to 200, health is the
+         determining factor in a player remaining in the arena.  Any units over
+		 100 will eventually decrease until the health is at 100.  Players
+		 begin with 110 units when they enter an arena or respawn.
+Armour - Measured in units rangning from 0 (no armour) to 200, armour augments
+         a player's health by applying a dampening effect for each ordinary
+		 unit of health that would normally be lost until the armour depletes.
+		 Players begin with 0 armour units when they enter and arena or
+		 respawn.
+Weapon - The default weapons for all players are the chain gun (CHAIN) and the
+         short-range, last-hope, knife.  The CHAIN is loaded with 100 rounds of
+		 ammunition.
+
+
