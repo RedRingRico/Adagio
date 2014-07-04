@@ -96,7 +96,7 @@ release: TARGET		:= $(TARGET)
 release: CPPFLAGS	+= -O3 -s -fomit-frame-pointer $(CPPFLAGS_EXT)
 release: $(TARGET)
 
-##### Profile Buidl #####
+##### Profile Build #####
 profile: BUILD		= Profile
 profile: BUILD_TYPE = profile
 profile: BUILD_DEF	= PROFILE
@@ -187,4 +187,7 @@ endif
 clean:
 	rm -rf $(TARGETDIR)
 	rm -rf $(OBJSDIR)
+
+cleangit:
+	rm -rf $(VERSIONINFO)
 

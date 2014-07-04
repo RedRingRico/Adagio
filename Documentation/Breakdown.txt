@@ -1,0 +1,58 @@
+Project: Adagio
+Document: Breakdown.txt
+Area: Planning
+
+Preamble
+--------
+This document contains a breakdown of the immediate work items that can be
+foreseen.  This is a preliminary document and is intended to bootstrap other
+documents and serve as a reference point in the future.
+
+
+List of work items
+1. Renderer
+    1.1  Polygon rendering
+	1.2  Applying textures
+	1.3  Rendering meshes
+	1.4  Rendering models
+	1.5  Applying shaders
+	1.6  Fonts and text
+	1.7  Materials <- Materials transcend the renderer to provide surface
+    	 properties
+	1.8  Texture rendering as 2D screen elements
+	1.9  Animated models
+2. Audio
+	2.1 Playback
+	2.2 Effects
+3. Networking
+	3.1 UDP Client<->Server
+4. Game
+	4.1 Game Entities
+	4.2 Menus
+	4.3 Game States
+5. Physics
+	5.1 Particles
+	5.2 Rag doll influence on skeletal models
+	5.3 Collision Detection
+6. Input
+	6.1 Mouse
+	6.2 Keyboard
+	6.3 Gamepad
+	6.4 Oculus Rift
+	6.5 PrioVR
+7. Debug
+	7.1 Drop-down console
+	7.2 3D visualisation aids
+9. Mathemtics
+	9.1 Vectors
+	9.2 Matrices
+	9.3 Quaternions
+	9.4 Planes
+	9.5 Rays
+10. System
+	10.1 Timing
+	10.2 Memory Management
+	10.3 File I/O
+11. Resource Management
+	11.1 Resource database
+
