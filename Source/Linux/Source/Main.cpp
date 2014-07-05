@@ -1,5 +1,6 @@
 #include <iostream>
 #include <GitVersion.hpp>
+#include <Game.hpp>
 
 const char *g_pBuild =
 #if defined BUILD_RELEASE
@@ -21,6 +22,17 @@ int main( int p_Argc, char **p_ppArgv )
 	std::cout << "\tCommit date: " << GIT_COMMITTERDATE << std::endl;
 	std::cout << "\tBranch:      " << GIT_BRANCH << std::endl;
 	std::cout << "\tTag:         " << GIT_TAG_NAME << std::endl;
-	return 0;
+
+	Adagio::Game AdagioGame;
+	
+	if( AdagioGame.Initialise( ) != 0 )
+	{
+		std::cout << "Something went horribly wrong during initialisation" <<
+			std::endl;
+
+		return 1;
+	}
+
+	return AdagioGame.Execute( );
 }
 
