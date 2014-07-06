@@ -24,5 +24,5 @@ namespace Adagio
 	};
 }
 
-#endif
+#endif // __ADAGIO_RENDERINGSURFACE_HPP__
 
